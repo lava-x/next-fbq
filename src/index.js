@@ -33,9 +33,5 @@ export default (code, { router } = {}) => Page => {
     }
   }
 
-  if (Page.getInitialProps) {
-    WithFacebookPixel.getInitialProps = Page.getInitialProps;
-  }
-
   return WithFacebookPixel;
 };
